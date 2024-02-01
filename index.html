@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FLORES</title>
+</head>
+<body>
+    <div class="greetings">
+        <span>H</span>
+        <span>O</span>
+        <span>L</span>
+        <span>A</span>
+    </div>
+    <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="description">
+        <span>Para Cachetes <3</span>
+    </div>
+    <div class="button">
+        <button onclick="iniciarReproduccion()">Haga Clic</button>
+    </div>
+
+    <audio id="audio1">
+        <source src="img/y2mate.com - They Long To Be Close To You  Carpenters HDHQ 1970.mp3" type="audio/mpeg">
+        Tu navegador no soporta esta forma de audio.
+    </audio>
+
+    <script>
+        function iniciarReproduccion() {
+            // Obtén el elemento de audio
+            var audio = document.getElementById("audio1");
+
+            // Reproduce el audio
+            audio.play();
+
+            // Redirige a FLORES.html después de 2 segundos (ajusta según sea necesario)
+            setTimeout(function() {
+                window.location.href = "FLORES.html";
+            }, 2000); // 2000 milisegundos = 2 segundos
+        }
+    </script>
+</body>
+</html>
